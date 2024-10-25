@@ -1,0 +1,23 @@
+/* Ajustar o corpo da página */
+body {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Estiliza o container do iframe */
+.bibliotecario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 20px 0;
+}
+
+/* Estiliza o iframe */
+#iframe-container {
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

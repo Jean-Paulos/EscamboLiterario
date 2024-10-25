@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibliotecário AI</title>
+
+    <!-- Favicon do site -->
+    <link rel="icon" href="/image/favicon.png" type="image/x-icon" />
+
+    <!-- Estilos globais e específicos da página -->
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/bibliotecario.css" />
+
+    <!-- Script externo para carregar o iframe dinamicamente -->
+    <script src="/js/bibliotecario.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="destaque">Escambo Literário</h1>
+      <!-- Menu de navegação -->
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/cadastro-livros">Cadastro de Livro</a></li>
+          <!-- Classe 'ativo' para destacar página selecionada -->
+          <li><a href="#" class="ativo">Bibliotecário AI</a></li>
+          <li><a href="/perfil">Meus Livros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h3 class="descricao">
+        Aqui você pode obter sugestões de livros diretamente do Bibliotecário
+        AI!
+      </h3>
+
+      <!-- Área do iframe que carrega o chat do Copilot AI -->
+      <div class="bibliotecario-container">
+        <div id="iframe-container"></div>
+        <!-- O iframe será inserido aqui pelo JavaScript -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Escambo Literário. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

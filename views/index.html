@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escambo Literário</title>
+
+    <!-- Favicon do site -->
+    <link rel="icon" href="/image/favicon.png" type="image/x-icon" />
+
+    <!-- CSS específico para a busca de livros e estilos globais -->
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- Script que gerencia a busca de livros -->
+    <script src="/js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="destaque">Escambo Literário</h1>
+      <nav>
+        <ul>
+          <!-- O link "Home" está marcado como ativo -->
+          <li><a href="#" class="ativo">Home</a></li>
+          <li><a href="/cadastro-livros">Cadastro de Livro</a></li>
+          <li><a href="/bibliotecario">Bibliotecario AI</a></li>
+          <li><a href="/perfil">Meus Livros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Área principal com o campo de pesquisa e resultados -->
+    <main>
+      <h3 class="descricao">
+        Qual é o seu livro favorito? Vamos te ajudar a encontrar outros títulos
+        que farão você se apaixonar pela leitura!
+      </h3>
+
+      <!-- Formulário de pesquisa -->
+      <section>
+        <input
+          id="campo-pesquisa"
+          type="text"
+          placeholder="Digite o nome do livro"
+        />
+        <button onclick="pesquisar()">Descobrir</button>
+        <!-- Botão que dispara a função de pesquisa -->
+      </section>
+
+      <!-- Resultados da pesquisa são inseridos dinamicamente aqui -->
+      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+
+    <!-- Modal -->
+    <div id="bookModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="bookTitle"></h2>
+        <img
+          id="imagemCapaModal"
+          alt="Capa do livro"
+          style="display: none; width: 100%; max-width: 400px"
+        />
+        <p>Local para troca do livro: <span id="exchangeLocation"></span></p>
+
+        <!-- Iframe do Google Maps -->
+        <h3>Localização</h3>
+        <iframe
+          id="mapsIframe"
+          width="400"
+          height="300"
+          src=""
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+
+        <!-- Links para comprar o livro -->
+        <h3>Onde encontrar o livro:</h3>
+        <ul>
+          <li>
+            <a href="https://www.amazon.com.br/" target="_blank">Amazon</a>
+          </li>
+          <li>
+            <a href="https://www.estantevirtual.com.br/" target="_blank"
+              >Estante Virtual</a
+            >
+          </li>
+          <li>
+            <a href="https://www.livrariacultura.com.br/" target="_blank"
+              >Livraria Cultura</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Escambo Literário. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

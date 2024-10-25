@@ -1,0 +1,79 @@
+/* Ajustar o corpo da página */
+body {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/* Ajusta o layout do main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o main ocupe a altura total da tela */
+    padding: 2rem;
+    box-sizing: border-box;
+    flex: 1; /* Faz o main ocupar o máximo de espaço possível */
+    overflow: hidden; /* Impede o conteúdo de ultrapassar os limites */
+}
+
+/* Estiliza o formulário de cadastro */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 35rem;
+    max-height: 90vh; /* Impede o form de ultrapassar 90% da altura da tela */
+    overflow-y: auto; /* Adiciona barra de rolagem caso o conteúdo do form seja muito grande */
+    box-sizing: border-box;
+    margin: 2rem 0;
+}
+
+/* Estiliza os inputs e selects para ficarem dentro dos limites */
+form input, form textarea, form select {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: #4A3023;
+    font-size: 1rem;
+}
+
+/* Estiliza o botão de envio */
+form button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #002F6C;
+    color: #F2F2F2;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 15rem; /* Limita a largura máxima do botão */
+}
+
+/* Efeito hover no botão */
+form button:hover {
+    background-color: #30475E;
+}
+
+
+/* Garante que o body ocupe a altura total da tela */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Garante que o rodapé fique no final da página */
+body > main {
+    flex: 1;
+}

@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+
+# Configurações sensíveis
+config/dbConfig.js
+config/apiKeys.js
+
+# Logs
+*.log
+
+# Sistema e Editor
+.DS_Store
+Thumbs.db
+.vscode/

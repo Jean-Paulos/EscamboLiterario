@@ -1,0 +1,120 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+/* Estiliza o corpo da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #F5DEB3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Header comum */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    background-color: #f5f5f5; /* Cor de fundo suave para o header */
+    border-bottom: 2px solid #4A3023;
+    box-sizing: border-box; /* Garante que padding não ultrapasse os limites da tela */
+}
+
+/* Título principal */
+h1.destaque {
+    font-size: 2.5rem;
+    color: #4A3023;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Navegação dentro do header */
+header nav {
+    margin-bottom: 1rem;
+}
+
+/* Estilos da lista de navegação */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Estilos dos itens da lista */
+header nav ul li {
+    margin: 0 1rem;
+}
+
+/* Links do header */
+header a {
+    color: #4A3023;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efeito hover nos links */
+header a:hover {
+    border: 2px solid #4A3023;
+    background-color: #e0dcdc; /* Cor de fundo ao passar o mouse */
+}
+
+/* Links ativos */
+header a.ativo {
+    border: 2px solid #4A3023;
+    background-color: #e0dcdc; /* Cor de fundo ao estar ativo */
+    font-weight: bold;
+}
+
+/* Parágrafo no header */
+header p {
+    font-size: 1.1rem;
+    color: #4A3023;
+    margin-top: 1rem;
+}
+
+/* Garante que o conteúdo ocupe o espaço disponível e "empurre" o footer para baixo */
+main {
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px; /* Adiciona padding ao conteúdo principal para evitar que fique colado nas bordas */
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+h3.descricao {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1rem; /* Tamanho da fonte padrão para descrições */
+    color: #4A3023; /* Cor do texto padrão */
+    margin: 1rem 0; /* Espaçamento padrão em cima e embaixo */
+}
+
+p.descricao {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #7a5948;
+    color: #F5DEB3;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    position: relative;
+    box-sizing: border-box; /* Garante que o footer não ultrapasse as margens */
+}
